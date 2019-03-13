@@ -1,0 +1,351 @@
+body {
+  background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: url(images/swosh.jpg)
+}
+
+h1 {
+  font-size: 8vh;
+  text-align: center;
+}
+
+h5 {
+  font-size: 6vh;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  margin: 0;
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+.delete {
+  display: flex;
+  justify-content: flex-end;
+  width: 78%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formalign h2 {
+  text-align: center;
+}
+
+.formalign h3 {
+  text-align: center;
+}
+
+.formalign p {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  display: inline;
+  padding: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 125px;
+}
+
+td {
+  width: 125px;
+}
+
+tr {
+  background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+a:hover {
+  color: dodgerblue;
+}
+
+.punkt {
+  color: transparent;
+}
+
+
+tr:hover {
+  background-color: white;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: dodgerblue;
+  color: white;
+}
+
+svg {
+  height: 20vh;
+  width: 40vh;
+}
+
+.whole {
+  display: grid;
+  grid-template-columns: 1fr 60% 1fr;
+  width: 100%;
+}
+
+.wrapper {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+  height: 60vh;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.wrapper2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.wrapper2 h2 {
+  text-align: center;
+}
+
+.search {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.search2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.search a {
+  color: firebrick;
+}
+
+.search div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+select {
+  border: 0 none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 10px;
+  width: 378px;
+  display: inline;
+}
+
+hr {
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+
+}
+
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 1
+}
+
+
+@media only screen and (max-width: 1200px) {
+  form {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 6vh;
+  }
+
+  .whole {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .search {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 90%;
+    margin: auto;
+  }
+
+  .search2 {
+    width: 100%;
+    grid-column-start: 1;
+    font-size: 2em;
+    font-weight: lighter;
+  }
+
+  ul {
+    display: none;
+  }
+
+  select {
+    width: 90%;
+  }
+
+  .wrapper2 {
+    width: 100%;
+  }
+
+  table {
+    width: 90%;
+  }
+  tr {
+    height: 8vh;
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  h1 {
+    font-size: 4em;
+    font-weight: lighter;
+  }
+
+  h2 {
+    font-weight: lighter;
+    font-size: 2em;
+
+  }
+  .search {
+    width: 100%;
+    font-weight: lighter;
+    font-size: 2em;
+  }
+
+  .search2 {
+    font-size: 1em;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 3vh;
+    width: 100%;
+  }
+  th {
+    font-size: 2vh;
+  }
+
+  select {
+    font-size: 5em;
+  }
+
+  .button {
+    font-size: 5em;
+  }
+
+  .grid h2 {
+    font-size: 5em;
+  }
+
+  .wrapper2 h2 {
+    font-size: 4em;
+  }
+  .delete {
+    font-size: 4em;
+  }
+
+  .formalign p {
+    font-size: 5em;
+  }
+}
